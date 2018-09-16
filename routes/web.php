@@ -20,7 +20,8 @@
 	// Route::delete('todos/{id}','TodoController@destroy');
 	// Route::get('todos/{id}/edit','TodoController@edit');
 	// Route::put('todos/{id}', 'TodoController@update');
-Route::resource('todos-ajax','TodoAjaxController');
-
-	
+// Route::resource('todos-ajax','TodoAjaxController');
+Route::get('login', function () {
+    return view('admin.login');
+	});
 
